@@ -7,23 +7,23 @@ A curated fork of the [Rock Hammer][r] responsive web library with added superpo
 ## Superpowers?
 Yeah, added features which original Rock Hammer doesn't have. There are:
 
-### A grid system
-Rock Hammer by design doesn't include a grid system. Lately I've been using [Unsemantic][u] CSS framework a lot, so I added it to the mix.
+### Grid system
+Rock Hammer by design doesn't include a grid system. Lately I'm using [Unsemantic][u] CSS framework a lot, so I added it to the mix.
 
-### Some vector icons
-[Font Awesome][fa] is an icon collection distributed as a web font. It's very handy to use and I've found myself to use it more and more in my recent projects.
+### Vector icons
+[Font Awesome][fa] is an icon collection distributed as web font. It's very handy to use and I've found myself to use it more and more in my recent projects.
 
 
 ## A note on directory names
 Ruby on Rails and other popular web frameworks prefer to name directories holding static assets as "stylesheets", "images" and "javascripts" so I've changed those accordingly.
 
 ## Other changes
-I don't use [Hammer for Mac][h] yet - someone could argue that I should - so I cut all the HTML partials from Super Hammer. 
+I don't use [Hammer for Mac][h] yet — someone could argue that I should — so I cut all the HTML partials from Super Hammer. 
 
 
 ## Working with SASS files
 
-First download SASS utilities at [sass-lang.com/install](http://sass-lang.com/install).
+First, download SASS at [sass-lang.com/install](http://sass-lang.com/install).
 
 Update all.css with your latest changes:
   
@@ -40,7 +40,7 @@ Remove the .sass-cache directory:
 
 ## License
 
-Multiple licenses are available. I'll do my best to summarize theme here:
+Multiple licenses are available. I'll do my best to summarize them here:
 
 * **Rock Hammer** is licensed under the Apache License 2.0
 * **Unsemantic** is dual-licensed both under MIT and GPL
