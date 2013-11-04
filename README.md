@@ -25,7 +25,11 @@ I don't use [Hammer for Mac][h] yet — someone could argue that I should — so
 
 First, download SASS at [sass-lang.com/install](http://sass-lang.com/install).
 
-Update all.css with your latest changes:
+Update both stylesheets all.css and lte-ie8.css with your latest changes:
+  
+    make
+
+Update just all.css with your latest changes:
   
     make cssupdate
   
@@ -36,7 +40,8 @@ Tell SASS processor to rebuild all.css automagically when a SCSS file changes:
 Remove the .sass-cache directory:
 
     make cssclean
-    
+
+While building a site you may want to only recompile/watch all.css, which is the main CSS file targeted to modern browsers. Occasionally when you need to deploy or test CSS against IE 8 and previous versions you run "make" to rebuild all.
 
 ## License
 
