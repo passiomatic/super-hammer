@@ -6,7 +6,7 @@
     width: 320px;
 }
 }
-@media screen {
+@media all {
   .clear {
     clear: both;
     display: block;
@@ -52,10 +52,6 @@
   .grid-parent {
     padding-left: 0;
     padding-right: 0;
-  }
-
-  body {
-    min-width: 320px;
   }
 }
 @media screen and (max-width: 767px) {
