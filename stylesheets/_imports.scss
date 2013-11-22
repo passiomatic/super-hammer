@@ -64,10 +64,14 @@ URL: http://stuffandnonsense.co.uk/projects/rock-hammer/
 
 @import "partials/table-rwd";
 
-@import "partials/_unsemantic-grid";
-//@import "partials/_unsemantic-grid-rtl";
+// Unsemantic grid (see also lte-ie8.scss) 
 
-@import "partials/_font-awesome";
+@import "partials/unsemantic/unsemantic-grid";
+//@import "partials/unsemantic/unsemantic-grid-rtl";
+
+// Font Awesome
+
+@import "partials/font-awesome";
 
 // Choose a responsive navigation pattern, or add a brand new one
 // @import "partials/navigation-toggle";

@@ -15,10 +15,13 @@ $ie8-opacity-supported 	 : false;
 @import 'imports';
 
 // Import specific Unsemantic grid rules for IE <= 8
-@import 'partials/unsemantic-grid-lte-ie8';
-//@import 'partials/unsemantic-grid-rtl-lte-ie8';
+@import 'partials/unsemantic/ie';
+//@import 'partials/unsemantic/ie-rtl';
 
 // IE override styles can be defined here (use classes applied to 
 // the HTML element as per the conditional comments to surround 
 // your selectors and target specific IE versions, such as ".lte-ie8")
 
+.lte-ie8 {
+    // Special code here
+}

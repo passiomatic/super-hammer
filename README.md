@@ -7,15 +7,21 @@ A curated fork of the [Rock Hammer][r] responsive web library with added superpo
 ## Superpowers?
 Yeah, added features which original Rock Hammer doesn't have. There are:
 
+
 ### Grid system
-Rock Hammer by design doesn't include a grid system. Lately I'm using [Unsemantic][u] CSS framework a lot, so I added it to the mix.
+By design Rock Hammer doesn't include a grid system. Lately I'm using [Unsemantic][u] CSS framework a lot, so I added it to the mix. 
+
+The two variables `bpmobilemax` and `bpdesktopmin` in `_config.scss` partial activate the Unsemantic mobile and desktop grids respectively. You can keep the default pixel values or use the predefined variables `bp2`...`bp6`.
+
+You can further tweaks Unsemantic grid by changing the `stylesheet/partials/unsemantic/_unsemantic-vars.scss` file. 
 
 ### Vector icons
 [Font Awesome][fa] is an icon collection distributed as web font. It's very handy to use and I've found myself to use it more and more in my recent projects.
 
 
 ## A note on directory names
-Ruby on Rails and other popular web frameworks prefer to name directories holding static assets as "stylesheets", "images" and "javascripts" so I've changed those accordingly.
+Ruby on Rails and other popular web frameworks prefer to name directories holding static assets as `stylesheets`, `images` and `javascripts` so I've changed those accordingly.
+
 
 ## Other changes
 I don't use [Hammer for Mac][h] yet — someone could argue that I should — so I cut all the HTML partials from Super Hammer. 
@@ -25,7 +31,7 @@ I don't use [Hammer for Mac][h] yet — someone could argue that I should — so
 
 First, download SASS at [sass-lang.com/install](http://sass-lang.com/install).
 
-Update both stylesheets all.css and lte-ie8.css with your latest changes:
+Update both stylesheets `all.css` and `lte-ie8.css` with your latest changes:
   
     make
 
@@ -41,7 +47,8 @@ Remove the .sass-cache directory:
 
     make cssclean
 
-While building a site you may want to only recompile/watch all.css, which is the main CSS file targeted to modern browsers. Occasionally when you need to deploy or test CSS against IE 8 and previous versions you run "make" to rebuild all.
+While building a site you may want to only recompile/watch `all.css`, which is the main CSS file targeted to modern browsers. Occasionally when you need to deploy or test CSS against IE 8 and previous versions you run `make` to rebuild all.
+
 
 ## License
 

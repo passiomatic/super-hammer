@@ -71,6 +71,12 @@ $bp4 							: 48em;
 $bp5 							: 62em; 		
 $bp6 							: 86.375em; 	
 
+// Device breakpoints. These kick in the desktop or mobile Unsemantic grid. 
+// You can keep the default pixel values or use the variables $bp2-$bp6 above
+
+$bpmobilemax                    : 767px;
+$bpdesktopmin                   : 768px;
+
 // Does your design needs a maximum width to maintain readable line lengths? 
 
 $maxwidth						: 90em;
