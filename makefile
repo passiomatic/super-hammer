@@ -1,17 +1,17 @@
 CSS_FILES=./stylesheets/rock-hammer.scss:./stylesheets/all.css
 CSS_FILES_IE8=./stylesheets/lte-ie8.scss:./stylesheets/lte-ie8.css
 
-all: cssupdate cssupdateie8
+all: update updateie8
 
-cssupdate:
+update:
 	sass -f -t compact --update $(CSS_FILES)
 
-cssupdateie8:
+updateie8:
 	sass -f -t compact --update $(CSS_FILES_IE8)
 
-csswatch:
+watch:
 	sass --watch $(CSS_FILES)
 
-cssclean:
+clean:
 	rm -r ./.sass-cache
 	
