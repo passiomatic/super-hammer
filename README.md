@@ -13,7 +13,7 @@ By design Rock Hammer doesn't include a grid system. Lately I'm using [Unsemanti
 
 The two variables `bpmobilemax` and `bpdesktopmin` in `_config.scss` partial activate the Unsemantic mobile and desktop grids respectively. You can keep the default pixel values or use the predefined variables `bp2`...`bp6`.
 
-You can further tweaks Unsemantic grid by changing the `stylesheet/partials/unsemantic/_unsemantic-vars.scss` file. 
+You can further tweaks Unsemantic grid by changing the `unsemantic/_unsemantic-vars.scss` file. 
 
 ### Vector icons
 [Font Awesome][fa] is an icon collection distributed as web font. It's very handy to use and I've found myself to use it more and more in my recent projects.
