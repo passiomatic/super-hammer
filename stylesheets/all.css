@@ -1044,32 +1044,11 @@ input.search-query { margin-bottom: 0; padding-right: 14px; padding-right: 4px \
   .pull-66 { left: -66.66667%; }
   .grid-100 { clear: both; width: 100%; } }
 /*
- *  Font Awesome 4.0.1
- *  the iconic font designed for Bootstrap
- *  ------------------------------------------------------------------------------
- *  The full suite of pictographic icons, examples, and documentation can be
- *  found at http://fontawesome.io.  Stay up to date on Twitter at
- *  http://twitter.com/fontawesome.
- *
- *  License
- *  ------------------------------------------------------------------------------
- *  - The Font Awesome font is licensed under SIL OFL 1.1 -
- *    http://scripts.sil.org/OFL
- *  - Font Awesome CSS, LESS, and SASS files are licensed under MIT License -
- *    http://opensource.org/licenses/mit-license.html
- *  - Font Awesome documentation licensed under CC BY 3.0 -
- *    http://creativecommons.org/licenses/by/3.0/
- *  - Attribution is no longer required in Font Awesome 3.0, but much appreciated:
- *    "Font Awesome by Dave Gandy - http://fontawesome.io"
- *
- *  Author - Dave Gandy
- *  ------------------------------------------------------------------------------
- *  Email: dave@fontawesome.io
- *  Twitter: http://twitter.com/davegandy
- *  Work: Lead Product Designer @ Kyruus - http://kyruus.com
+ *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH -------------------------- */
-@font-face { font-family: 'FontAwesome'; src: url("../fonts/fontawesome-webfont.eot?v=4.0.1"); src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.0.1") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.0.1") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.0.1") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.0.1#fontawesomeregular") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'FontAwesome'; src: url("../fonts/fontawesome-webfont.eot?v=4.0.3"); src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.0.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.0.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular") format("svg"); font-weight: normal; font-style: normal; }
 
 .fa { display: inline-block; font-family: FontAwesome; font-style: normal; font-weight: normal; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
@@ -1276,7 +1255,7 @@ input.search-query { margin-bottom: 0; padding-right: 14px; padding-right: 4px \
 
 .fa-check-square-o:before { content: "\f046"; }
 
-.fa-move:before { content: "\f047"; }
+.fa-arrows:before { content: "\f047"; }
 
 .fa-step-backward:before { content: "\f048"; }
 
@@ -1332,9 +1311,9 @@ input.search-query { margin-bottom: 0; padding-right: 14px; padding-right: 4px \
 
 .fa-mail-forward:before, .fa-share:before { content: "\f064"; }
 
-.fa-resize-full:before { content: "\f065"; }
+.fa-expand:before { content: "\f065"; }
 
-.fa-resize-small:before { content: "\f066"; }
+.fa-compress:before { content: "\f066"; }
 
 .fa-plus:before { content: "\f067"; }
 
@@ -1378,9 +1357,9 @@ input.search-query { margin-bottom: 0; padding-right: 14px; padding-right: 4px \
 
 .fa-folder-open:before { content: "\f07c"; }
 
-.fa-resize-vertical:before { content: "\f07d"; }
+.fa-arrows-v:before { content: "\f07d"; }
 
-.fa-resize-horizontal:before { content: "\f07e"; }
+.fa-arrows-h:before { content: "\f07e"; }
 
 .fa-bar-chart-o:before { content: "\f080"; }
 
@@ -1476,9 +1455,9 @@ input.search-query { margin-bottom: 0; padding-right: 14px; padding-right: 4px \
 
 .fa-briefcase:before { content: "\f0b1"; }
 
-.fa-fullscreen:before { content: "\f0b2"; }
+.fa-arrows-alt:before { content: "\f0b2"; }
 
-.fa-group:before { content: "\f0c0"; }
+.fa-group:before, .fa-users:before { content: "\f0c0"; }
 
 .fa-chain:before, .fa-link:before { content: "\f0c1"; }
 
@@ -1496,7 +1475,7 @@ input.search-query { margin-bottom: 0; padding-right: 14px; padding-right: 4px \
 
 .fa-square:before { content: "\f0c8"; }
 
-.fa-reorder:before { content: "\f0c9"; }
+.fa-bars:before { content: "\f0c9"; }
 
 .fa-list-ul:before { content: "\f0ca"; }
 
@@ -1582,9 +1561,9 @@ input.search-query { margin-bottom: 0; padding-right: 14px; padding-right: 4px \
 
 .fa-file-text-o:before { content: "\f0f6"; }
 
-.fa-building:before { content: "\f0f7"; }
+.fa-building-o:before { content: "\f0f7"; }
 
-.fa-hospital:before { content: "\f0f8"; }
+.fa-hospital-o:before { content: "\f0f8"; }
 
 .fa-ambulance:before { content: "\f0f9"; }
 
@@ -1639,10 +1618,6 @@ input.search-query { margin-bottom: 0; padding-right: 14px; padding-right: 4px \
 .fa-folder-o:before { content: "\f114"; }
 
 .fa-folder-open-o:before { content: "\f115"; }
-
-.fa-expand-o:before { content: "\f116"; }
-
-.fa-collapse-o:before { content: "\f117"; }
 
 .fa-smile-o:before { content: "\f118"; }
 
@@ -1718,13 +1693,13 @@ input.search-query { margin-bottom: 0; padding-right: 14px; padding-right: 4px \
 
 .fa-anchor:before { content: "\f13d"; }
 
-.fa-unlock-o:before { content: "\f13e"; }
+.fa-unlock-alt:before { content: "\f13e"; }
 
 .fa-bullseye:before { content: "\f140"; }
 
-.fa-ellipsis-horizontal:before { content: "\f141"; }
+.fa-ellipsis-h:before { content: "\f141"; }
 
-.fa-ellipsis-vertical:before { content: "\f142"; }
+.fa-ellipsis-v:before { content: "\f142"; }
 
 .fa-rss-square:before { content: "\f143"; }
 
@@ -1881,6 +1856,8 @@ input.search-query { margin-bottom: 0; padding-right: 14px; padding-right: 4px \
 .fa-vimeo-square:before { content: "\f194"; }
 
 .fa-turkish-lira:before, .fa-try:before { content: "\f195"; }
+
+.fa-plus-square-o:before { content: "\f196"; }
 
 /* responsive-nav.js v1.0.14 by @viljamis */
 .js nav[role=navigation] { clip: rect(0 0 0 0); max-height: 0; position: absolute; display: block; overflow: hidden; zoom: 1; }
