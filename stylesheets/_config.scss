@@ -498,9 +498,6 @@ $wellborderwidth 				: $alertborderwidth;
 // And wells’ border style
 $wellborderstyle 				: $borderstyle;
 
-// And wells’ border color
-$wellcolor						: lighten($neutralcolor, 75%);
-
 // Set the wells’ border radius. Default is $borderradius defined above
 $wellborderradius 				: $borderradius;
 
