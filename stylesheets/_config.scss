@@ -34,7 +34,7 @@
 // Start the ‘atmosphere’ of your design by defining the colours of your pages and text
 
 $bodycolor 						: rgb(255,255,255);
-$textcolor 						: rgb(71,63,63);
+$textcolor 						: #333;
 
 
 
@@ -93,7 +93,7 @@ $no-mq-classname 				: ".lt-ie9";
 
 
 // Now define your design’s typography by setting a base typeface and size
-$basefontfamily 				: Palatino, "Times New Roman", Times, serif;
+$basefontfamily 				: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $basefontsize 					: 16;
 
 // Your headings may inherit the base typeface, or you may set a different font stack
@@ -106,7 +106,7 @@ $baseheadingfontweight 			: bold;
 $baseheadingfontcolor 			: inherit;
 
 // Often you’ll use an alternative typeface (eg: for buttons, form inputs and tables)
-$altfontfamily 					: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$altfontfamily 					: Palatino, "Times New Roman", Times, serif;
 $altlineheight 					: 1.35em;
 
 // You can choose a special typeface just for ampersands too
@@ -121,17 +121,17 @@ $codefont 						: Consolas, Menlo, Monaco, Courier New, monospace;
 
 
 // Define your design’s palette by choosing three main colours
-$primarycolor 					: rgb(146,154,0);
-$secondarycolor 				: rgb(164,50,21);
-$tertiarycolor 					: rgb(41,47,54);
+$primarycolor 					: rgb(30,144,255);
+$secondarycolor 				: rgb(178,34,34);
+$tertiarycolor 					: rgb(144,238,144);
 
 // Now set a neutral colour for borders etc.
-$neutralcolor 					: rgb(71,63,63);
-$midneutralcolor 				: darken($neutralcolor,25%);
-$darkneutralcolor 				: darken($neutralcolor,50%);
-$lightneutralcolor 				: lighten($neutralcolor,25%);
-$lighterneutralcolor 			: lighten($neutralcolor,50%);
-$lightestneutralcolor 			: lighten($neutralcolor,70%);
+$neutralcolor 					: rgb(136,136,136);
+$midneutralcolor 				: darken($neutralcolor,20%);
+$darkneutralcolor 				: darken($neutralcolor,30%);
+$lightneutralcolor 				: lighten($neutralcolor,20%);
+$lighterneutralcolor 			: lighten($neutralcolor,30%);
+$lightestneutralcolor 			: lighten($neutralcolor,40%);
 
 // Sometimes you may want $black and $white to be ‘almost black’ and ’off-white’
 $black 							: rgb(0,0,0);
@@ -144,13 +144,14 @@ $linkcolorvisited   			: darken($linkcolorhover, 10);
 $linkcolorfocus 				: darken($linkcolorvisited, 10);
 
 // Now define another set of colours. These will be used to style alerts and buttons
-$alertcolor 					: rgb(218,79,73);
-$errorcolor 					: rgb(176,20,0);
-$infocolor 						: rgb(216,220,162);
-$inversecolor 					: rgb(65,65,65);
-$successcolor 					: rgb(188,212,222);
-$warningcolor 					: $errorcolor;
+$alertcolor 					: #EEEEEE;
+$errorcolor 					: #B22222;
+$infocolor 						: #9DCFFF;
+$successcolor 					: #90EE90;
 
+// Define these only for buttons
+$warningcolor 					: #B22222;
+$inversecolor 					: #414141;
 
 
 
@@ -163,7 +164,7 @@ $warningcolor 					: $errorcolor;
 $bordercolor    				: $lighterneutralcolor;
 $borderstyle					: solid;
 $borderwidth 					: 1px;
-$borderradius 					: 4px;
+$borderradius 					: 2px;
 
 
 
@@ -211,7 +212,7 @@ $basefontbackgroundcolor		: $lightestneutralcolor;
 // By default site navigation has a flat background colour
 // Add an optional gradient in __navigation-toggle.scss
 // Configure the gradient colours in _texture.scss
-$navigationbackgroundcolor 		: $tertiarycolor;
+$navigationbackgroundcolor 		: $midneutralcolor;
 
 // Set navigation items’ bottom border width
 $navigationborderwidth			: $borderwidth;
@@ -220,7 +221,7 @@ $navigationborderwidth			: $borderwidth;
 $navigationborderstyle			: $borderstyle;
 
 // Set navigation items’ bottom border colour
-$navigationbordercolor 			: darken($navigationbackgroundcolor,10%);
+$navigationbordercolor 			: darken($navigationbackgroundcolor,5%);
 
 // Set navigation items’ link colours
 $navigationlinkcolor			: $white;
@@ -240,7 +241,7 @@ $navbarheight					: 44px;
 // By default Navbars have a flat background colour
 // Add an optional gradient in _bootstrap-navbar.scss
 // Configure the gradient colours in _texture.scss
-$navbarbackgroundcolor			: lighten($neutralcolor,75%);
+$navbarbackgroundcolor			: lighten($neutralcolor,55%);
 
 // Set navbar’s border width
 $navbarborderwidth				: $borderwidth * 2;
@@ -314,8 +315,8 @@ $breadcrumbborderradius			: $borderradius;
 
 $paginationpadding					: 4px 11px;
 
-// Set pagination font-family. Default is $altfontfamily defined above
-$paginationfontfamily 				: $altfontfamily;
+// Set pagination font-family. Default is $basefontfamily defined above
+$paginationfontfamily 				: $basefontfamily;
 
 // By default pagers have a default flat background colour
 // Add an optional gradient in _bootstrap-pagination.scss
@@ -375,7 +376,7 @@ $pagerbordercolor 				: darken($pagerbackgroundcolor, 20%);
 $pagerborderradius				: $borderradius;
 
 // Set pager’s font-family. Default is $basefontfamily defined above
-$pagerfontfamily 				: $altfontfamily;
+$pagerfontfamily 				: $basefontfamily;
 
 // By default colour is a tint of background colour. Adjust percentage as required
 $pagercolor						: $linkcolor;
@@ -423,7 +424,7 @@ $heroshadowblur					: 10px;
 
 // =alerts ============
 
-$alertpadding					: 8px 35px 8px 14px;
+$alertpadding					: 8px 14px;
 
 // Alerts have a default flat background colour
 // Add an optional gradient in _bootstrap-alerts.scss
@@ -431,13 +432,13 @@ $alertpadding					: 8px 35px 8px 14px;
 $alertbackgroundcolor 			: $alertcolor;
 
 // Set the alert’s border width
-$alertborderwidth 				: $borderwidth * 2;
+$alertborderwidth 				: $borderwidth;
 
 // And the alert’s border style
 $alertborderstyle 				: $borderstyle;
 
 // By default alert’s border is a tint of $alertbackgroundcolor. Adjust percentage as required
-$alertbordercolor				: darken($alertbackgroundcolor, 20%);
+$alertbordercolor				: darken($alertbackgroundcolor, 15%);
 
 // Set the alert’s border radius. Default is $borderradius defined above
 $alertborderradius 				: $borderradius;
@@ -447,8 +448,8 @@ $alertborderradius 				: $borderradius;
 // Default is $basefontsize defined above
 $alertfontsize 					: $basefontsize;
 
-// By default colour is a tint of background colour. Adjust percentage as required
-$alertcolor						: darken($alertbackgroundcolor, 75%);
+// By default text colour is a tint of background colour. Adjust percentage as required
+$alertcolor						: darken($alertbackgroundcolor, 80%);
 
 // Add optional box-shadow values or ignore
 // By default shadow colour is a tint of background colour. Adjust percentage as required
@@ -466,7 +467,7 @@ $alertbordercolorerror   		: darken($errorcolor, 10%);
 $alertcolorerror 				: lighten($errorcolor, 60%);
 
 // Set the info alerts’ border and text colours
-$alertbordercolorinfo   		: darken($infocolor, 10%);
+$alertbordercolorinfo   		: darken($infocolor, 15%);
 $alertcolorinfo					: darken($infocolor, 50%);
 
 // Set the inverse alerts’ border and text colours
@@ -474,12 +475,8 @@ $alertbordercolorinverse   		: $inversecolor;
 $alertcolorinverse				: $white;
 
 // Set the success alerts’ border and text colours
-$alertbordercolorsuccess   		: darken($successcolor, 10%);
+$alertbordercolorsuccess   		: darken($successcolor, 15%);
 $alertcolorsuccess				: darken($successcolor, 50%);
-
-// Set the warning alerts’ border and text colours
-$alertbordercolorwarning   		: lighten($warningcolor, 20%);
-$alertcolorwarning				: darken($warningcolor, 20%);
 
 
 
@@ -548,8 +545,8 @@ $forminputbordercolorfocus 		: darken($forminputbordercolor, 25%);
 // Set inputs’ border radius. Default is $borderradius defined above
 $forminputborderradius			: $borderradius;
 
-// Set inputs’ font-family. Default is $borderradius defined above
-$forminputfontfamily			: $altfontfamily;
+// Set inputs’ font-family. Default is $basefontfamily defined above
+$forminputfontfamily			: $basefontfamily;
 
 // Set placeholder text colour
 $formplaceholdercolor 			: $lightneutralcolor;
@@ -577,7 +574,7 @@ $buttonpadding 					: 6px 11px;
 // Buttons have a default flat background colour
 // Add an optional gradient in _bootstrap-form-buttons.scss
 // Configure the gradient colours in _texture.scss
-$buttonbackgroundcolor 			: $lightestneutralcolor;
+$buttonbackgroundcolor 			: $white;
 
 // Set the default button’s border width. Default is $borderwidth defined above
 $buttonborderwidth				: $borderwidth;
@@ -586,10 +583,10 @@ $buttonborderwidth				: $borderwidth;
 $buttonborderstyle				: $borderstyle;
 
 // By default border colour is a tint of background colour. Adjust percentage as required
-$buttonbordercolor 				: darken($buttonbackgroundcolor,10%);
+$buttonbordercolor 				: $bordercolor;
 
 // Sometimes you may want a darker bottom border to suggest three-dimensions
-$buttonbottombordercolor 		: darken($buttonbordercolor, 5%);
+$buttonbottombordercolor 		: darken($buttonbordercolor,5%);
 
 // Set the default button’s border radius. Default is $borderradius defined above
 $buttonborderradius				: $borderradius;
@@ -605,7 +602,7 @@ $buttonfontsize 				: $basefontsize;
 // Set the default button’s text colour
 // Colours for :hover and :active  are derived automatically from $buttoncolor
 // Override colours for :hover and :active in _bootstrap-form-buttons.scss
-$buttoncolor 					: $lightneutralcolor;
+$buttoncolor 					: $primarycolor;
 
 
 
@@ -615,28 +612,18 @@ $buttoncolor 					: $lightneutralcolor;
 
 
 // Set the primary action button’s border and text colours
-$buttonbordercolorprimary		: darken($primarycolor, 10%);
+$buttonbordercolorprimary		: darken($primarycolor, 20%);
 $buttoncolorprimary				: $white;
 
 
-// Set the error button’s border and text colours
-$buttonbordercolorerror			: darken($errorcolor, 10%);
-$buttoncolorerror				: $white;
-
-
-// Set the info button’s border and text colours
-$buttonbordercolorinfo			: darken($infocolor, 10%);
-$buttoncolorinfo				: darken($infocolor, 50%);
-
-
 // Set the inverse button’s border and text colours
-$buttonbordercolorinverse		: darken($inversecolor, 10%);
+$buttonbordercolorinverse		: darken($inversecolor, 20%);
 $buttoncolorinverse				: $white;
 
 
 // Set the success button’s border and text colours
-$buttonbordercolorsuccess		: darken($successcolor, 10%);
-$buttoncolorsuccess				: darken($successcolor, 50%);
+$buttonbordercolorsuccess		: darken($successcolor, 25%);
+$buttoncolorsuccess				: darken($successcolor, 60%);
 
 
 // Set the warning button’s border and text colours
@@ -671,8 +658,8 @@ $tableborderstyle				: $borderstyle;
 // Set tables’ border colour
 $tablebordercolor 				: $lighterneutralcolor;
 
-// Set tables’ font-family. Default is $altfontfamily defined above
-$tablefontfamily 				: $altfontfamily;
+// Set tables’ font-family. Default is $basefontfamily defined above
+$tablefontfamily 				: $basefontfamily;
 
 
 
@@ -692,7 +679,7 @@ $transitionduration				: .25s;
 $tooltipbackgroundcolor			: $primarycolor;
 
 // Set tooltip font family
-$tooltipfontfamily				: $altfontfamily;
+$tooltipfontfamily				: $basefontfamily;
 
 // Set tooltip font color
 $tooltipcolor					: $white;
@@ -721,7 +708,7 @@ $popoverbackgroundcolor 		: $primarycolor;
 $popovertitlebackground 		: $popoverbackgroundcolor;
 
 // Set popover font family
-$popoverfontfamily				: $altfontfamily;
+$popoverfontfamily				: $basefontfamily;
 
 // Set popover font color
 $popovercolor					: $white;

@@ -1,4 +1,4 @@
-CSS_FILES=./stylesheets/rock-hammer.scss:./stylesheets/all.css
+CSS_FILES=./stylesheets/super-hammer.scss:./stylesheets/all.css
 CSS_FILES_IE8=./stylesheets/lte-ie8.scss:./stylesheets/lte-ie8.css
 
 all: update updateie8

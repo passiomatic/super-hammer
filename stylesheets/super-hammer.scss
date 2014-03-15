@@ -12,5 +12,8 @@ $media-queries-supported : true;
 // Opacity support in IE required via the proprietry ActiveX?
 $ie8-opacity-supported 	 : false;
 
+// Show current breakpoint on page bottom
+$show-breakpoint         : false;
+ 
 // Import all SASS imports
 @import 'imports';
