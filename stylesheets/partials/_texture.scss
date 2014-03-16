@@ -19,7 +19,6 @@
 @mixin inversegrad 		{ @include vertical($inversecolor, darken($inversecolor, 10%)); }
 @mixin primarygrad 		{ @include vertical($primarycolor, darken($primarycolor, 10%)); }
 @mixin successgrad 		{ @include vertical($successcolor, darken($successcolor, 10%)); }
-@mixin warninggrad 		{ @include vertical($warningcolor, darken($warningcolor, 10%)); }
 @mixin errorgrad 		{ @include vertical($errorcolor, darken($errorcolor, 10%)); }
 @mixin infograd 		{ @include vertical($infocolor, darken($infocolor, 10%)); }
 
@@ -44,7 +43,8 @@
     @include successgrad;
 }
 
-.btn-warning {
-    @include warninggrad;
+.btn-danger,
+.btn-error {
+    @include errorgrad;
 }
 

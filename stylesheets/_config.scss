@@ -149,8 +149,7 @@ $errorcolor 					: #B22222;
 $infocolor 						: #9DCFFF;
 $successcolor 					: #90EE90;
 
-// Define these only for buttons
-$warningcolor 					: #B22222;
+// Define this only for buttons
 $inversecolor 					: #414141;
 
 
@@ -627,8 +626,8 @@ $buttoncolorsuccess				: darken($successcolor, 60%);
 
 
 // Set the warning button’s border and text colours
-$buttonbordercolorwarning		: darken($warningcolor, 10%);
-$buttoncolorwarning				: $white;
+$buttonbordercolorerror		    : darken($errorcolor, 10%);
+$buttoncolorerror			    : $white;
 
 
 

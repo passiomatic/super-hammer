@@ -219,7 +219,7 @@ a:hover, a:active { outline: 0; }
 
 .btn-success { background-image: -webkit-gradient(linear, 0 0, 0 100%, from(lightgreen), to(#64e764)); background-image: -webkit-linear-gradient(top, lightgreen, #64e764); background-color: #64e764; background-image: -moz-linear-gradient(top, lightgreen, #64e764); background-image: -ms-linear-gradient(top, lightgreen, #64e764); background-image: -o-linear-gradient(top, lightgreen, #64e764); background-image: linear, top, lightgreen, #64e764; background-repeat: repeat-x; }
 
-.btn-warning { background-image: -webkit-gradient(linear, 0 0, 0 100%, from(firebrick), to(#871a1a)); background-image: -webkit-linear-gradient(top, firebrick, #871a1a); background-color: #871a1a; background-image: -moz-linear-gradient(top, firebrick, #871a1a); background-image: -ms-linear-gradient(top, firebrick, #871a1a); background-image: -o-linear-gradient(top, firebrick, #871a1a); background-image: linear, top, firebrick, #871a1a; background-repeat: repeat-x; }
+.btn-danger, .btn-error { background-image: -webkit-gradient(linear, 0 0, 0 100%, from(firebrick), to(#871a1a)); background-image: -webkit-linear-gradient(top, firebrick, #871a1a); background-color: #871a1a; background-image: -moz-linear-gradient(top, firebrick, #871a1a); background-image: -ms-linear-gradient(top, firebrick, #871a1a); background-image: -o-linear-gradient(top, firebrick, #871a1a); background-image: linear, top, firebrick, #871a1a; background-repeat: repeat-x; }
 
 .accordion { margin-bottom: 1.5em; }
 
@@ -764,10 +764,10 @@ input.search-query { margin-bottom: 0; padding-right: 14px; padding-right: 4px \
 .btn-success:visited, .btn-success:active, .btn-success:hover { background-color: #7aeb7a; color: #072c07; }
 
 /*btn-success*/
-.btn-warning { background-color: firebrick; border-color: #871a1a; border-bottom-color: #5c1212; color: white; }
-.btn-warning:visited, .btn-warning:active, .btn-warning:hover { background-color: #9d1e1e; color: #f2f2f2; }
+.btn-danger, .btn-error { background-color: firebrick; border-color: #871a1a; border-bottom-color: #5c1212; color: white; }
+.btn-danger:visited, .btn-danger:active, .btn-danger:hover, .btn-error:visited, .btn-error:active, .btn-error:hover { background-color: #9d1e1e; color: #f2f2f2; }
 
-/*btn-warning*/
+/*btn-error*/
 .btn-xlarge { padding: 11px 22px; font-size: 32px; font-size: 3.2rem; border-width: 2px; border-radius: 4px; }
 
 .btn.btn-large { *padding-top: 7px; *padding-bottom: 7px; }

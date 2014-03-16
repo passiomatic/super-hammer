@@ -87,20 +87,21 @@ background-color : darken($successcolor, 5%);
 color : darken($buttoncolorsuccess, 5%); }
 }/*btn-success*/
 
-.btn-warning {
-background-color : $warningcolor;
-// @include warninggrad;
+.btn-danger,
+.btn-error {
+background-color : $errorcolor;
+// @include errorgrad;
 border : {
-color : $buttonbordercolorwarning;
-bottom-color : darken($buttonbordercolorwarning, 10%); }
-color : $buttoncolorwarning;
+color : $buttonbordercolorerror;
+bottom-color : darken($buttonbordercolorerror, 10%); }
+color : $buttoncolorerror;
 
 &:visited,
 &:active,
 &:hover {
-background-color : darken($warningcolor, 5%); 
-color : darken($buttoncolorwarning, 5%); }
-}/*btn-warning*/
+background-color : darken($errorcolor, 5%); 
+color : darken($buttoncolorerror, 5%); }
+}/*btn-error*/
 
 .btn-xlarge {
 padding : 11px 22px;
