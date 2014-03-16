@@ -24,7 +24,10 @@ Ruby on Rails and other popular web frameworks prefer to name directories holdin
 
 
 ## Other changes
-I don't use [Hammer for Mac][h] yet — someone could argue that I should — so I cut all the HTML partials from Super Hammer. 
+
+* I don't use [Hammer for Mac][h] yet — someone could argue that I should — so I cut all the HTML partials from Super Hammer. 
+* I've made some changes to button and alert classes to align them to Boostrap 2. Super Hammer 0.2 has a generic alert style and `alert--error`/`alert--danger` (red), `alert--info` (blue) and `alert--success` (green). Buttons styles are default, `btn-primary`, `btn-success`, `btn-warning` and `btn-inverse`.
+* New `$show-breakpoint` SASS variable in `super-hammer.scss` lets you display current breakpoint (default is false).
 
 
 ## Working with SASS files
