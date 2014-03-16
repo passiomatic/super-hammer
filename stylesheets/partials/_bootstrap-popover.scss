@@ -41,7 +41,7 @@ border-bottom : $popoverborderwidth $popoverborderstyle darken($popovertitleback
 border-radius : inherit inherit 0 0;
 font-family : $popoverfontfamily;
 @include font-size($basefontsize);
-color : $popovercolor;
+color : $popovertitlecolor;
 
 &:empty {
 display : none; }
@@ -50,7 +50,7 @@ display : none; }
 .popover-content {
 padding : $baselineheight / 2 $gutterwidth / 2;
 font-family : $popoverfontfamily;
-@include font-size($basefontsize / 1.25);
+@include font-size($popoverfontsize);
 line-height : $baselineheight / 1.15;
 color : $popovercolor; }
 

@@ -538,18 +538,18 @@ a:hover, a:active { outline: 0; }
 
 .pagination-mini ul > li > a, .pagination-mini ul > li > span { padding: 2px 5px; font-size: 12px; font-size: 1.2rem; }
 
-.popover { position: absolute; top: 0; left: 0; z-index: 1000; display: none; max-width: 276px; text-align: left; background-color: dodgerblue; -webkit-background-clip: padding-box; -moz-background-clip: padding-box; background-clip: padding-box; border: 2px solid #0483ff; border-radius: 2px; white-space: normal; }
+.popover { position: absolute; top: 0; left: 0; z-index: 1000; display: none; max-width: 276px; text-align: left; background-color: #eeeeee; -webkit-background-clip: padding-box; -moz-background-clip: padding-box; background-clip: padding-box; border: 2px solid #e1e1e1; border-radius: 2px; white-space: normal; }
 .popover.top { margin-top: -10px; }
 .popover.right { margin-left: 10px; }
 .popover.bottom { margin-top: 10px; }
 .popover.left { margin-left: -10px; }
 
 /*popover*/
-.popover-title { margin: 0; padding: 0.75em 12px; font-size: 16px; font-size: 1.6rem; font-weight: normal; background-color: dodgerblue; border-bottom: 2px solid #0483ff; border-radius: inherit inherit 0 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; font-size: 1.6rem; color: white; }
+.popover-title { margin: 0; padding: 0.75em 12px; font-size: 16px; font-size: 1.6rem; font-weight: normal; background-color: #eeeeee; border-bottom: 2px solid #e1e1e1; border-radius: inherit inherit 0 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; font-size: 1.6rem; color: #333333; }
 .popover-title:empty { display: none; }
 
 /*popover-title*/
-.popover-content { padding: 0.75em 12px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 12.8px; font-size: 1.28rem; line-height: 1.30435em; color: white; }
+.popover-content { padding: 0.75em 12px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; font-size: 1.4rem; line-height: 1.30435em; color: #333333; }
 
 .popover .arrow, .popover .arrow:after { position: absolute; display: block; width: 0; height: 0; border-color: transparent; border-style: solid; }
 
@@ -558,14 +558,14 @@ a:hover, a:active { outline: 0; }
 .popover .arrow:after { border-width: 12px; content: ""; }
 
 .popover { /*top*/ /*right*/ /*bottom*/ /*left*/ }
-.popover.top .arrow { left: 50%; margin-left: -12px; border-bottom-width: 0; border-top-color: #0483ff; bottom: -12px; }
-.popover.top .arrow:after { bottom: 1px; margin-left: -12px; border-bottom-width: 0; border-top-color: dodgerblue; }
-.popover.right .arrow { top: 50%; left: -12px; margin-top: -12px; border-left-width: 0; border-right-color: #0483ff; }
-.popover.right .arrow:after { left: 1px; bottom: -12px; border-left-width: 0; border-right-color: dodgerblue; }
-.popover.bottom .arrow { left: 50%; margin-left: -12px; border-top-width: 0; border-bottom-color: #0483ff; top: -12px; }
-.popover.bottom .arrow:after { top: 1px; margin-left: -12px; border-top-width: 0; border-bottom-color: dodgerblue; }
-.popover.left .arrow { top: 50%; right: -12px; margin-top: -12px; border-right-width: 0; border-left-color: #0483ff; }
-.popover.left .arrow:after { right: 1px; border-right-width: 0; border-left-color: dodgerblue; bottom: -12px; }
+.popover.top .arrow { left: 50%; margin-left: -12px; border-bottom-width: 0; border-top-color: #e1e1e1; bottom: -12px; }
+.popover.top .arrow:after { bottom: 1px; margin-left: -12px; border-bottom-width: 0; border-top-color: #eeeeee; }
+.popover.right .arrow { top: 50%; left: -12px; margin-top: -12px; border-left-width: 0; border-right-color: #e1e1e1; }
+.popover.right .arrow:after { left: 1px; bottom: -12px; border-left-width: 0; border-right-color: #eeeeee; }
+.popover.bottom .arrow { left: 50%; margin-left: -12px; border-top-width: 0; border-bottom-color: #e1e1e1; top: -12px; }
+.popover.bottom .arrow:after { top: 1px; margin-left: -12px; border-top-width: 0; border-bottom-color: #eeeeee; }
+.popover.left .arrow { top: 50%; right: -12px; margin-top: -12px; border-right-width: 0; border-left-color: #e1e1e1; }
+.popover.left .arrow:after { right: 1px; border-right-width: 0; border-left-color: #eeeeee; bottom: -12px; }
 
 /*popover*/
 table { max-width: 100%; background-color: transparent; border-collapse: collapse; border-spacing: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
@@ -589,7 +589,7 @@ table { max-width: 100%; background-color: transparent; border-collapse: collaps
 
 .table-hover tbody tr:hover td, .table-hover tbody tr:hover th { background-color: #eeeeee; }
 
-.tooltip { position: absolute; z-index: 1000; display: block; visibility: visible; font-size: 11px; font-size: 1.1rem; line-height: 1.5em; -webkit-opacity: 0; -moz-opacity: 0; opacity: 0; }
+.tooltip { position: absolute; z-index: 1000; display: block; visibility: visible; font-size: 14px; font-size: 1.4rem; line-height: 1.5em; -webkit-opacity: 0; -moz-opacity: 0; opacity: 0; }
 .tooltip.in { -webkit-opacity: 80; -moz-opacity: 80; opacity: 80; }
 .tooltip.top { margin-top: -3px; padding: 5px 0; }
 .tooltip.right { margin-left: 3px; padding: 0 5px; }

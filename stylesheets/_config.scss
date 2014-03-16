@@ -684,7 +684,7 @@ $tooltipfontfamily				: $basefontfamily;
 $tooltipcolor					: $white;
 
 // Set tooltip font size
-$tooltipfontsize				: 11;
+$tooltipfontsize				: 14;
 
 // Set tooltip’s border radius. Default is $borderradius defined above
 $tooltipborderradius 			: $borderradius;
@@ -701,7 +701,7 @@ $tooltiparrowcolor				: $tooltipbackgroundcolor;
 // =popovers ==========
 
 // Set background color for popover body
-$popoverbackgroundcolor 		: $primarycolor;
+$popoverbackgroundcolor 		: $lightestneutralcolor;
 
 // Set background color for popover title
 $popovertitlebackground 		: $popoverbackgroundcolor;
@@ -710,7 +710,13 @@ $popovertitlebackground 		: $popoverbackgroundcolor;
 $popoverfontfamily				: $basefontfamily;
 
 // Set popover font color
-$popovercolor					: $white;
+$popovercolor					: $textcolor;
+
+// Set popover font color
+$popovertitlecolor				: $textcolor;
+
+// Set popover font size
+$popoverfontsize				: 14;
 
 // Set popover border-width. Default is twice $borderwidth defined above
 $popoverborderwidth				: $borderwidth * 2;
