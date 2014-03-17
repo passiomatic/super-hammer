@@ -6,7 +6,7 @@
 @mixin breadcrumbgrad	{ @include vertical($breadcrumbbackgroundcolor, darken($breadcrumbbackgroundcolor, 10%)); }
 @mixin forminputgrad 	{ @include vertical($white, $lighterneutralcolor); }
 @mixin greygrad 		{ @include vertical($white, darken($lighterneutralcolor, 10%)); }
-@mixin herograd 		{ @include vertical($herobackgroundcolor, darken($herobackgroundcolor, 10%)); }
+@mixin herograd 		{ @include vertical($herobackgroundcolor, darken($herobackgroundcolor, 5%)); }
 @mixin navigationgrad 	{ @include vertical($navigationbackgroundcolor, darken($navigationbackgroundcolor, 10%)); }
 @mixin navbargrad 		{ @include vertical($navbarbackgroundcolor, darken($navbarbackgroundcolor, 10%)); }
 @mixin paginationgrad 	{ @include vertical($paginationbackgroundcolor, darken($paginationbackgroundcolor, 10%)); }
@@ -14,7 +14,6 @@
 
 // Alert and buttons
 
-@mixin alertgrad 		{ @include vertical($alertcolor, darken($alertcolor, 10%)); }
 @mixin buttongrad 		{ @include vertical($buttonbackgroundcolor, darken($buttonbackgroundcolor, 8%)); }
 @mixin inversegrad 		{ @include vertical($inversecolor, darken($inversecolor, 10%)); }
 @mixin primarygrad 		{ @include vertical($primarycolor, darken($primarycolor, 10%)); }
@@ -25,26 +24,38 @@
 @mixin wellgrad 		{ @include vertical($wellbackgroundcolor, darken($wellbackgroundcolor, 10%)); }
 
 
-// Setup gradients for buttons
+// Set up gradients for buttons
 
 .btn {
-    @include buttongrad;
-}
+@include buttongrad; }
 
 .btn-inverse {
-    @include inversegrad;
-}
+@include inversegrad; }
 
 .btn-primary {
-    @include primarygrad;
-}
+@include primarygrad; }
 
 .btn-success {
-    @include successgrad;
-}
+@include successgrad; }
 
 .btn-danger,
 .btn-error {
-    @include errorgrad;
+@include errorgrad; }
+
+// Set up gradient and shadow for hero
+
+.hero-unit {
+//@include herograd;
+//@include box-shadow(inset 0 1px $heroshadowblur $heroshadow); 
 }
 
+// Setup well, alert and hero shadows
+
+.well {
+@include box-shadow(inset 0 1px $wellshadowblur $wellshadow); }
+
+.well--large {
+@include box-shadow(inset 0 1px $wellshadowblur * 2 $wellshadow); }
+
+.well--small {
+@include box-shadow(inset 0 1px $wellshadowblur / 2 $wellshadow); }

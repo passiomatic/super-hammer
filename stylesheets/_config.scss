@@ -395,7 +395,7 @@ $pagercolor						: $linkcolor;
 // Hero have a default flat background colour
 // Add an optional gradient in _bootstrap-hero.scss
 // Configure the gradient colours in _texture.scss
-$herobackgroundcolor            : rgba($primarycolor, .1);
+$herobackgroundcolor            : tint($primarycolor, 85%);
 
 // Set hero’s border width
 $heroborderwidth 				: $borderwidth;
@@ -404,7 +404,7 @@ $heroborderwidth 				: $borderwidth;
 $heroborderstyle 				: $borderstyle;
 
 // By default hero’s border is a tint of $herobackgroundcolor. Adjust percentage as required
-$herobordercolor				: darken($herobackgroundcolor, 20%);
+$herobordercolor				: darken($herobackgroundcolor, 15%);
 
 // Set hero’s border radius. Default is $borderradius defined above
 $heroborderradius				: $borderradius;
@@ -412,10 +412,10 @@ $heroborderradius				: $borderradius;
 // By default colour is a tint of background colour. Adjust percentage as required
 $herocolor						: $textcolor;
 
-// Add optional box-shadow values or ignore
+// Add optional box-shadow values or ignore (see also _texture.scss)
 // By default shadow colour is a tint of background colour. Adjust percentage as required
 $heroshadow						: darken($herobackgroundcolor, 10%);
-$heroshadowblur					: 10px;
+$heroshadowblur					: 20px;
 
 
 
@@ -450,10 +450,6 @@ $alertfontsize 					: $basefontsize;
 // By default text colour is a tint of background colour. Adjust percentage as required
 $alertcolor						: darken($alertbackgroundcolor, 70%);
 
-// Add optional box-shadow values or ignore
-// By default shadow colour is a tint of background colour. Adjust percentage as required
-$alertshadow					: darken($alertbackgroundcolor, 10%);
-$alertshadowblur				: 10px;
 
 
 
@@ -503,7 +499,7 @@ $wellbordercolor				: darken($wellbackgroundcolor, 10%);
 // Set the wells’ text colour
 $wellcolor						: $textcolor;
 
-// Add optional box-shadow values or ignore
+// Add optional box-shadow values or ignore (see also _texture.scss)
 // By default shadow colour is a tint of background colour. Adjust percentage as required
 $wellshadow						: darken($wellbackgroundcolor, 10%);
 $wellshadowblur					: $gutterwidth / 2;

@@ -8,7 +8,6 @@
 padding : $alertpadding;
 margin-bottom : $baselineheight;
 background-color : $alertbackgroundcolor;
-// @include alertgrad;
 border : $alertborderwidth $alertborderstyle $alertbordercolor;
 border-radius : $alertborderradius;
 @include font-size($alertfontsize);
