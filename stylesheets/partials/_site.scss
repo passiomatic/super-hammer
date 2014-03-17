@@ -43,9 +43,9 @@ color : $textcolor; }
     body:after {
     content : 'base';
     position: fixed;
-    left: 10px;
-    bottom: 10px;
-    color: red;
+    left: $gutterwidth;
+    bottom: $baselineheight;
+    color: green;
     z-index: 1;
     
     @include media-query-bp($bp2) {
@@ -62,6 +62,26 @@ color : $textcolor; }
     
     @include media-query-bp($bp6) {
     content : 'bp6'; }
+
+    }
+
+    body:before {
+    content : '';
+    position: fixed;
+    left: $gutterwidth;
+    bottom: $baselineheight * 2;
+    color: blue;
+    z-index: 1;
+
+    @include media-query-bp($bpmobilemax, max) {
+    content : 'mobile'; }
+    
+    @include media-query-bp($bptabletmax, max) {
+    content : 'tablet'; }
+    
+    @include media-query-bp($bpdesktopmin) {
+    content : 'desktop'; }
+
     }
 }
 

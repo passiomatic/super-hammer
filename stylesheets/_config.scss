@@ -50,11 +50,6 @@ $baselineheight 				: 1.5em;
 
 
 
-// Now set media types and features for your CSS3 media queries
-// THIS IS NOW DEPRECATED, AS MEDIA QUERIES ARE DEFINED USING THE NEW
-// MEDIA-QUERY-BP MIXIN AND ARE DEFINED WITH THE SELECTORS TO WHICH 
-// THEY ARE NEEDED
-
 // Now set values for your responsive design breakpoints
 // Ems are default, but you may use px if you prefer
 // Five are included but you may add more
@@ -71,11 +66,13 @@ $bp4 							: 48em;
 $bp5 							: 62em; 		
 $bp6 							: 86.375em; 	
 
-// Device breakpoints. These kick in the desktop or mobile Unsemantic grid. 
+// Device breakpoints. These kick in the desktop, tablet or mobile Unsemantic grid. 
 // You can keep the default pixel values or use the variables $bp2-$bp6 above
 
 $bpmobilemax                    : 767px;
-$bpdesktopmin                   : 768px;
+$bptabletmin                    : $bpmobilemax + 1;
+$bptabletmax                    : 1024px;
+$bpdesktopmin                   : $bptabletmax + 1;
 
 // Does your design needs a maximum width to maintain readable line lengths? 
 

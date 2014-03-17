@@ -19,8 +19,7 @@ $show-breakpoint         : false;
 @import 'imports';
 
 // Import specific Unsemantic grid rules for IE <= 8
-@import 'partials/unsemantic/ie';
-//@import 'partials/unsemantic/ie-rtl';
+@import 'partials/unsemantic-grid-ie';
 
 // IE override styles can be defined here (use classes applied to 
 // the HTML element as per the conditional comments to surround 
