@@ -76,7 +76,7 @@ color : $textcolor; }
     @include media-query-bp($bpmobilemax, max) {
     content : 'mobile'; }
     
-    @include media-query-bp($bptabletmax, max) {
+    @include media-query-bp($bptabletmin, min) {
     content : 'tablet'; }
     
     @include media-query-bp($bpdesktopmin) {

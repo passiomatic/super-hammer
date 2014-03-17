@@ -74,6 +74,9 @@ $bptabletmin                    : $bpmobilemax + 1;
 $bptabletmax                    : 1024px;
 $bpdesktopmin                   : $bptabletmax + 1;
 
+// Show current device (blue) and logical (green) breakpoints on the bottom
+$show-breakpoint                : false;
+
 // Does your design needs a maximum width to maintain readable line lengths? 
 
 $maxwidth						: 90em;
