@@ -233,8 +233,8 @@ a:hover, a:active { outline: 0; }
 
 .collapse.in { height: auto; opacity: 1; -webkit-transition: opacity 0.25s linear; -moz-transition: opacity 0.25s linear; -ms-transition: opacity 0.25s linear; -o-transition: opacity 0.25s linear; transition: opacity 0.25s linear; }
 
-.alert { padding: 8px 14px; margin-bottom: 1.5em; background-color: #eeeeee; border: 1px solid #c8c8c8; border-radius: 2px; font-size: 16px; font-size: 1.6rem; color: #222222; }
-.alert > h4 { margin: 0; color: #222222; }
+.alert { padding: 8px 14px; margin-bottom: 1.5em; background-color: #f5efd0; border: 1px solid #e8da91; border-radius: 2px; font-size: 16px; font-size: 1.6rem; color: #4f4511; }
+.alert > h4 { margin: 0; color: #4f4511; }
 
 /*alert*/
 .alert--success { background-color: lightgreen; border-color: #4ee44e; color: #116e11; }

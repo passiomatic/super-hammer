@@ -144,7 +144,7 @@ $linkcolorvisited   			: darken($linkcolorhover, 10);
 $linkcolorfocus 				: darken($linkcolorvisited, 10);
 
 // Now define another set of colours. These will be used to style alerts and buttons
-$alertcolor 					: #EEEEEE;
+$alertcolor 					: #f5efd0;
 $errorcolor 					: #B22222;
 $infocolor 						: #9DCFFF;
 $successcolor 					: #90EE90;
@@ -448,7 +448,7 @@ $alertborderradius 				: $borderradius;
 $alertfontsize 					: $basefontsize;
 
 // By default text colour is a tint of background colour. Adjust percentage as required
-$alertcolor						: darken($alertbackgroundcolor, 80%);
+$alertcolor						: darken($alertbackgroundcolor, 70%);
 
 // Add optional box-shadow values or ignore
 // By default shadow colour is a tint of background colour. Adjust percentage as required
