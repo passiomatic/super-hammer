@@ -260,6 +260,20 @@ color : $color; }
 color : $color; }
 }
 
+// @include validation-state(STATE, COLOR);
+
+@mixin validation-state($state, $color) {
+.has-#{$state} {
+input,
+textarea,
+select {
+border-color : $color;
+}
+.help-block,
+.help-inline,
+label { color: $color; } }
+}
+
 // @include overflow
 
 @mixin text-overflow {

@@ -223,3 +223,9 @@ padding : ($baselineheight - 1) $gutterwidth $baselineheight;
 [placeholder]:focus::-webkit-input-placeholder {
 opacity : 0;
 transition : opacity .5s .5s ease; }
+
+// field states
+
+@include validation-state(error, $errorstatecolor);
+@include validation-state(warning, $warningstatecolor);
+@include validation-state(success, $successstatecolor);

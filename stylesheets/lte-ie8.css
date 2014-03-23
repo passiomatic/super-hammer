@@ -11,6 +11,11 @@ Built on Rock Hammer by Stuff and Nonsense
 URL: http://stuffandnonsense.co.uk/projects/rock-hammer/ 
 
 */
+/*
+$formerrorcolor                 :
+$formwarningcolor               :
+$formsuccesscolor               : 
+*/
 html, body, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
 
 article, aside, figure, footer, header, hgroup, nav, section { display: block; }
@@ -691,6 +696,15 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
 .form-actions:after { clear: both; }
 
 [placeholder]:focus::-webkit-input-placeholder { opacity: 0; transition: opacity .5s .5s ease; }
+
+.has-error input, .has-error textarea, .has-error select { border-color: #871a1a; }
+.has-error .help-block, .has-error .help-inline, .has-error label { color: #871a1a; }
+
+.has-warning input, .has-warning textarea, .has-warning select { border-color: #a38e23; }
+.has-warning .help-block, .has-warning .help-inline, .has-warning label { color: #a38e23; }
+
+.has-success input, .has-success textarea, .has-success select { border-color: #148414; }
+.has-success .help-block, .has-success .help-inline, .has-success label { color: #148414; }
 
 .help-block, .help-inline { color: #4d4d4d; font-size: 12.8px; font-size: 1.28rem; line-height: 1.4; }
 

@@ -143,13 +143,19 @@ $linkcolorhover 				: darken($linkcolor, 10);
 $linkcolorvisited   			: darken($linkcolorhover, 10);
 $linkcolorfocus 				: darken($linkcolorvisited, 10);
 
-// Now define another set of colours. These will be used to style alerts and buttons
+// Define another set of colours. These will be used to style alerts and buttons
 $alertcolor 					: #f5efd0;
 $errorcolor 					: #B22222;
 $infocolor 						: #9DCFFF;
 $successcolor 					: #90EE90;
 
-// Define this only for buttons
+// Define form validation states (success, warning, error) 
+// These usually are darker versions of colours above
+$errorstatecolor 			    : darken($errorcolor, 10%);
+$successstatecolor 				: darken($successcolor, 45%);
+$warningstatecolor              : darken($alertcolor, 50%);
+
+// Finally define this only for buttons
 $inversecolor 					: #414141;
 
 
@@ -191,6 +197,7 @@ $borderradius 					: 2px;
 // 4. TABLES
 // 5. MISC
 //    Tooltip
+//    Popover
 
 
 
@@ -536,6 +543,12 @@ $forminputborderstyle			: $borderstyle;
 $forminputbordercolor 			: $bordercolor;
 $forminputbordercolorhover 		: darken($forminputbordercolor, 10%);
 $forminputbordercolorfocus 		: darken($forminputbordercolor, 25%);
+
+/*
+$formerrorcolor                 :
+$formwarningcolor               :
+$formsuccesscolor               : 
+*/
 
 // Set inputs’ border radius. Default is $borderradius defined above
 $forminputborderradius			: $borderradius;

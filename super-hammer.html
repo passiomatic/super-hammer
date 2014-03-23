@@ -1488,7 +1488,7 @@ Radio option</label></p>
 <div class="l-wrap">
 <div class="l-summary">
 <h3>Input sizes</h3>
-<p>Additional <code>input-mini</code>, <code>input-small</code>, <code>input-medium</code>, <code>input-large</code>, <code>input-xlarge</code> and <code>input-xxlarge</code> classes alters the input size.</p>
+<p>Additional <code>input-mini</code>, <code>input-small</code>, <code>input-medium</code>, <code>input-large</code>, <code>input-xlarge</code> and <code>input-xxlarge</code> classes alter the input size.</p>
 </div><!-- l-summary -->
 
 <div class="l-content">
@@ -1515,6 +1515,52 @@ Radio option</label></p>
 
 </form>
 
+</div><!-- l-content -->
+</div><!-- l-wrap -->
+
+<!-- Next -->
+
+<div class="l-wrap">
+<div class="l-summary">
+<h3>Validation states</h3>
+<p>Apply to the parent container of each field <code>has-success</code>, <code>has-warning</code> and <code>has-error</code> classes to alter presentation.</p>
+</div><!-- l-summary -->
+
+<div class="l-content">
+<!-- http://twitter.github.com/bootstrap/base-css.html#forms -->
+<form class="form-horizontal">
+
+<div class="control-group has-success">
+<label class="control-label" for="username">Username</label>
+<div class="controls">
+<input type="text" id="username" name="username" value="johndoe">
+<span class="help-block"><i class="fa fa-check"></i> Username is available</span>
+</div><!-- controls -->
+</div><!-- control-group -->
+
+<div class="control-group has-warning">
+<label class="control-label" for="password">Password</label>
+<div class="controls">
+<input type="password" id="password" name="password" value="abc">
+<span class="help-block"><i class="fa fa-warning"></i> Password is weak</span>
+</div><!-- controls -->
+</div><!-- control-group -->
+
+<div class="control-group has-error">
+<label class="control-label" for="email">Email</label>
+<div class="controls">
+<input type="email" id="email" name="email" value="john@example.com">
+<span class="help-block"><i class="fa fa-ban"></i> Email address is already taken</span>
+</div><!-- controls -->
+</div><!-- control-group -->
+
+<div class="control-group">
+<div class="controls">
+<button class="btn">Submit</button>
+</div><!-- controls -->
+</div><!-- control-group -->
+
+</form><!-- form-horizontal -->
 </div><!-- l-content -->
 </div><!-- l-wrap -->
 
