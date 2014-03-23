@@ -11,7 +11,7 @@ Yeah, added features which original Rock Hammer doesn't have. There are:
 ### Grid system
 By design Rock Hammer doesn't include a grid system. Lately I'm using [Unsemantic][u] CSS framework a lot, so I added it to the mix. 
 
-The variables `bpmobilemax`, `bptabletmin`, `bptabletmax` and `bpdesktopmin` in `_config.scss` partial activate the Unsemantic mobile, tablet and desktop grids respectively. You can keep the default pixel values or use the predefined variables `bp2`...`bp6`. 
+The variables `bpmobilemax` and `$bptabletmax` in `_config.scss` partial define the device breakpoints which activate the Unsemantic mobile, tablet and desktop grids. You can keep the default pixel values or use the predefined logical breakpoints `bp2`...`bp6`. 
 
 The `$show-breakpoint` SASS variable lets you display current device and logical breakpoints (default is false).
 
@@ -26,8 +26,8 @@ Ruby on Rails and other popular web frameworks prefer to name directories holdin
 ## Other changes
 
 * I don't use [Hammer for Mac][h] yet — someone could argue that I should — so I cut all the HTML partials from Super Hammer. 
-* I've made some changes to button and alert classes to align them to Boostrap 2. Super Hammer has a generic alert style plus `alert--error`/`alert--danger` (red), `alert--info` (blue) and `alert--success` (green). Buttons have a generic style plus `btn-primary` (blue), `btn-success` (green), `btn-error`/`btn-danger` (red) and `btn-inverse` (black).
-
+* I've made some changes to button and alert classes to align them to Boostrap 2. Super Hammer has a generic alert style (yellow) plus `alert--error`/`alert--danger` (red), `alert--info` (blue) and `alert--success` (green). Buttons have a generic style plus `btn-primary` (blue), `btn-success` (green), `btn-error`/`btn-danger` (red) and `btn-inverse` (black).
+* Form fields have validation states: apply a `has-success`, `has-warning` and `has-error` class to the field parent container.
 
 
 ## Working with SASS files
